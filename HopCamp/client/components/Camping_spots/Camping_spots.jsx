@@ -14,14 +14,14 @@ const Camping_spots = () => {
               More camping spots nearby
             </span>
           </div>
-          <CapmpingSportsCarousel />
+          <CapmpingSpotsCarousel />
         </div>
       </div>
     </>
   );
 };
 
-const CapmpingSportsCarousel = () => {
+const CapmpingSpotsCarousel = () => {
   const [index, setIndex] = useState(0);
   
   const handleSelect = (selectedIndex, e) => {
@@ -36,7 +36,12 @@ const CapmpingSportsCarousel = () => {
         indicators={false}
       >
       <Carousel.Item>
+        <div className="d-flex">
           <CampingSpotCard />
+          <CampingSpotCard />
+          <CampingSpotCard />
+          <CampingSpotCard />
+        </div>
       </Carousel.Item>
       <Carousel.Item>
           <CampingSpotCard />
