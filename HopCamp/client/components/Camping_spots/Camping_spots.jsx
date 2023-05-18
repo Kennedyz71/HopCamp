@@ -36,28 +36,16 @@ const CapmpingSportsCarousel = () => {
         indicators={false}
       >
       <Carousel.Item>
-        <div className="d-flex">
           <CampingSpotCard />
-          <CampingSpotCard />
-          <CampingSpotCard />
-          <CampingSpotCard />
-        </div>
       </Carousel.Item>
       <Carousel.Item>
-        <div className="d-flex">
           <CampingSpotCard />
-          <CampingSpotCard />
-          <CampingSpotCard />
-          <CampingSpotCard />
-        </div>
       </Carousel.Item>
       <Carousel.Item>
-        <div className="d-flex">
           <CampingSpotCard />
+      </Carousel.Item>
+      <Carousel.Item>
           <CampingSpotCard />
-          <CampingSpotCard />
-          <CampingSpotCard />
-        </div>
       </Carousel.Item>
     </Carousel>
     </>
