@@ -12,11 +12,13 @@ function Camp_safety() {
             <img
               src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1120,q_auto/internal/inclusion_policy_text_standard.png"
               className="safety-card-image"
+              style={{width:'70%'}}
              ></img>
             <div className="logo">
               <img
                 src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_256,q_auto/hipcamp_hand_hexqba.png"
                 className="hipcamp-hand"
+                
               />
             </div>
           </div>
@@ -33,14 +35,15 @@ function Camp_safety() {
         <div className="safety-card" data-card-name="bottom2">
           <div className="safety-card-content">
             <img
-              src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_1120,q_auto/internal/hosting_standards_text_wide.png"
+              src="https://hipcamp-res.cloudinary.com/f_auto,c_limit,w_950,q_auto/internal/hosting_standards_text.png"
               className="safety-card-image"
-              
+              style={{width:'50%'}}
             ></img>
           </div>
           <a
             className="safety-card-button"
             href="https://www.hipcamp.com/en-US/hoststandards"
+            style={{marginBottom:'0px',marginTop:'0px'}}
           >
             Learn More
           </a>
@@ -56,6 +59,7 @@ function Camp_safety() {
           <a
             className="safety-card-button"
             href="https://www.hipcamp.com/journal/company-news/fire-safety-introducing-national-weather-service-integration"
+            style={{marginTop:'30px'}}
           >
             Learn More
           </a>

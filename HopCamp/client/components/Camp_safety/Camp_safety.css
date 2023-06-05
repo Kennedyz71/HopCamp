@@ -99,7 +99,7 @@
 }
 .safety-card-image{
     height: auto;
-    width: 600px;
+    width: auto;
     z-index: 1;
     /* border: 1px solid brown */
     

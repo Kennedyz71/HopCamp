@@ -1,23 +1,18 @@
 .host-info-container {
-    display: flex;
     position: relative;
     border-top: 1px solid rgba(0, 0, 0, 0.5);
     border-bottom: 1px solid rgb(0, 0, 0, 0.5);
-    display: flex;
     width: 70vw;
-    justify-content: center;
 }
   
 .container-container {
     display: flex;
-    flex-direction: column;
     /* align-items: flex-start; */
     width: 100%;
     max-width: 1280px;
     min-width: 550px;
     box-sizing: border-box;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
 }
   
 .host-info {
@@ -60,7 +55,6 @@
 }
 
 .contact-button {
-    margin-left: -65px;
     border: 1px solid rgb(0, 0, 0);
     background-color: rgba(0, 0, 0, 0);
     
@@ -71,7 +65,7 @@
   
 
 /*modal*/
-.modal {
+.host-modal {
     display: flex;
     position: fixed;
     z-index: 1;
@@ -85,7 +79,7 @@
     justify-content: center;
 }
   
-.modal-content {
+.host-modal-content {
     background-color: #f3f3f3;
     padding: 20px;
     border-radius: 8px;
@@ -94,7 +88,7 @@
 .ask {
     font-size: 24px;
     font-weight: 800;
-    padding-top: 35px;
+    padding-top: 45px;
     padding-bottom: 10px;
 }
   
@@ -123,37 +117,35 @@ textarea {
     border: 1px solid #ccc;
 }
 
-.modal-body-contact {
+.host-modal-body-contact {
     position: relative;
-    height: 584px;
+    height: 500px;
     width: 574px;
 }
 
-.modal-send-button {
+.host-modal-send-button {
     margin-top: 10px;
     padding: 8px 16px;
-    background-color: rgba(255, 255, 255, 0);
-    color: rgb(253, 253, 253);
+    color: rgb(243, 242, 239);
     border-radius: 4px;
     border: none;
 }
 
-.modal-close-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    width: 40px;
-    margin-left: 10px;
-    margin-top: 10px;
+.host-modal-close-button {
+    position: absolute;
+    border:none;
+    top:20px;
+    left:10px;
     font-weight: 900;
     font-size: 25px;
     cursor: pointer;
-    background-color: #00a2ff00;
+    background-color: #d8e2eb21;
+    color: rgb(51, 49, 33);
+    z-index: 10050;
 }
 
 
-.modal-close-button:hover {
-    border-radius: 50%;
+.host-modal-close-button:hover {
+    border-radius: 75%;
     background-color: #05050269;
 }

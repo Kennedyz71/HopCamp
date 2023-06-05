@@ -9,8 +9,8 @@ const Campsite_info = () => {
         tentSites: "6",
         lodgingSites: "1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incid",
-        activities: ['Biking', 'Walking', 'Swimming', 'Hiking',],
-        naturalFeatures: ['Beach', 'Forest', 'Mountain', 'River', 'Sea', 'Water', ]
+        activities: ['Biking', 'Boating', 'Fishing', 'Hiking', 'Horseback riding', 'Paddling', 'Wind sports','Climbing','Surfing','Swimming','Wildlife watching'],
+        naturalFeatures: ['Beach', 'Forest', 'Redwoods', 'River, stream, or creek', 'Swimming hole', 'Costal', 'Farm', 'Ranch']
 
     }
 
@@ -39,17 +39,19 @@ const Campsite_info = () => {
                     <button>{`Show more >`}</button>
                 </div>
             </div>
-            <div className={`right-side | `}>
-                <div className='Activities'>
+            <div className={`right-side | container grid row `}>
+                <div className={`Activities | row align-items-center`}>
                     <div>
+                        <span className={`fs-2 fw-semibold row`}>Activities</span>
                         {/* img tag */}
-                        <span>Biking</span>
+                        <span className={`fs-4 col`}>{land.activities.splice(0,4)}</span>
                     </div>
                 </div>
                 <div className='Natural-features'>
                     <div>
+                        <span className={`fs-2 fw-semibold row`}>Natural Features</span>
                         {/* img tag */}
-                        <span>Beach</span>
+                        <span>{land.naturalFeatures.splice(0,4)}</span>
                     </div>
 
                 </div>

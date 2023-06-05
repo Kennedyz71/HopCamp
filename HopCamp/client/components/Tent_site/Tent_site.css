@@ -11,7 +11,14 @@
     margin-top: 24px;
     
 }
-
+.container {
+}
+.container.sticky {
+    position: fixed; /* Make the element sticky */
+    top: 0; /* Stick it to the top of the container */
+    width: 100%; /* Take up the full width of the container */
+    z-index: 1; /* Ensure it stays on top of other content */
+  }
 #tentsite-title {
     font-size: 24px;
     font-weight: 600;
@@ -20,7 +27,7 @@
     font-family: Calibre, Helvetica, Arial, sans-serif;
 }
 
-#tentsite-availability {
+#tentsite-availabilieaty {
     font-size: .9em;
     font-weight: 400;
 }

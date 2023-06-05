@@ -24,7 +24,10 @@ function Host() {
 
   return (
     <div className="host-info-container">
-      <div className="container-container">
+      <div style={{paddingTop: '40px',
+    paddingBottom: '40px',
+    }}>
+        <div className="container-container">
         <div className="host-pic">
           <img
             alt="Avatar"
@@ -35,20 +38,23 @@ function Host() {
         <div className="host-info">
           <div className="hosted-by">Hosted by John & Lesley B.</div>
           <div className="since">Joined in October 2015</div>
-          <button className="contact-button" onClick={handleButtonClick}>
-            Contact host
-          </button>
+          
         </div>
+        </div>
+        <button className="contact-button btn btn-outline-dark" onClick={handleButtonClick}>
+            Contact host
+        </button>
       </div>
+      
 
       {/*modal*/}
       {/* <div className="modal-container" style={{ overflow: "hidden" }}> */}
-        <Modal show={showModal} onHide={closeModal} className={`modal `} style={{zIndex:1050}}>
+        <Modal show={showModal} onHide={closeModal} className={`host-modal`} style={{zIndex:1050}}>
           <Button
-            variant="secondary" onClick={closeModal} className="modal-close-button">
-              X
+            variant="secondary" onClick={closeModal} className="host-modal-close-button">
+            X
           </Button>
-          <Modal.Body className="modal-body-contact">
+          <Modal.Body className="host-modal-body-contact">
             <div className="ask">Ask John & Lesley B. a question</div>
             <div className="message-body">
               <div>Message the host</div>
@@ -57,7 +63,7 @@ function Host() {
           </Modal.Body>
           <Modal.Footer>
             <Button
-              variant="secondary" onClick={handleOnClick} className="modal-send-button">
+              variant="secondary" onClick={handleOnClick} className="host-modal-send-button">
               Send message
             </Button>
           </Modal.Footer>

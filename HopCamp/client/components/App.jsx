@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState,useRef } from 'react'
 import "./App.css"
 import 'bootstrap/dist/css/bootstrap.css';
 import Current_campsite from './Current_campsite/Current_campsite.jsx'
@@ -17,13 +17,29 @@ import ThingsNearby from './Things_Nearby/ThingsNearby.jsx';
 import Tent_Site_Map from './Tent_site/Tent_site_map';
 
 function App() {
+    const popupCalenderEl = useRef(null);
     const handleClick = (event) => {
-        const popUpCalender = document.getElementById("categoryList");
+        const popUpCalender = popupCalenderEl.current;
+        console.log(popUpCalender);
         if (popUpCalender && !popUpCalender.contains(event.target))
             if (popUpCalender.classList.contains("show"))
                 popUpCalender.classList.toggle("show");
     };
 
+    // window.addEventListener('scroll',function(){
+    //     const contentCurrentCampEl = document.getElementById('currentCampSites');
+    //     const mapEl = this.document.getElementById('stickyMap');
+    //     if (contentCurrentCampEl) {
+    //         let contentHeight = contentCurrentCampEl.getBoundingClientRect();
+    //         console.log(contentHeight)
+    //         if (this.window.scrollY >= contentHeight)
+    //         mapEl.classList.add('sticky');
+    //     else
+    //         mapEl.classList.remove('sticky');
+    //     }
+      
+        
+    // })
   return (
     <>
       <div>
@@ -53,15 +69,10 @@ function App() {
         <Ratings />
       </div>
       <h1>Things To Do Nearby (Dan)</h1>
-      {/* <ThingsNearby /> */}
-      <div>
         <Camping_spots />
-      </div>
-      <h1>Camp Safety (Dennis)</h1>
-      <div>
+        <Camp_safety/>
         <Safety_Partners />
-      </div>
-      <Camp_safety/>
+      
       <h1>Footer (Chris)</h1>
     </div></>
   )

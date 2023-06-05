@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import styles from "./Available_sites.module.css";
 import Calendar from "./Calendar";
-function Available_sites() {
+function Available_sites(props) {
   const [currentDate, setCurrentDate] = useState(new Date());
   const [calendar, setCalendar] = useState([]);
   const [calendarNext, setCalendarNext] = useState([]);
@@ -171,6 +171,7 @@ function Available_sites() {
           dateSelected={dateSelected}
           currentDate={currentDate}
           handleClear={()=>setDateSelected([])}
+          popupCalenderEl = {props.popupCalenderEl}
         />
 
       <div id="filterElement">

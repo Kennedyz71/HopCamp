@@ -1,4 +1,4 @@
-.component-container {
+.safety-partners-component-container {
     height: 100vh;
     width: 100vw;
     background-color:#f1f3ee;
@@ -8,7 +8,7 @@
     flex-direction: column;
 }
 
-.heading {
+.safety-partners-heading {
     font-size: 26px;
     line-height: 16px;
     text-align: start;
@@ -17,7 +17,7 @@
     font-family: sans-serif;
 }
 
-.card-container{
+.safety-partners-card-container{
     height: 80vh;
     width: 100wh;
     display: flex;
@@ -25,7 +25,7 @@
     justify-content: space-between;
 }
 
-.partner-card{
+.safety-partner-card{
     background-color: #e6efd9;
     color: #28400c;
     height:480px;
@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.card-content{
+.safety-partner-card-content{
     margin-top: 20px;
     margin-left: 30px;
     margin-right: 30px;
@@ -46,14 +46,14 @@
     /* background-color: red; */
 }
 
-.card-image{
+.safety-partner-card-image{
     height: 50vh;
     width: 50wh;
     z-index: 1;
     /* visibility: hidden; */
 }
 
-.card-button{
+.safety-partner-card-button{
     display: block;
     text-align: center;
     padding: 10px;
@@ -70,7 +70,7 @@
     color:#28400c;
 }
 
-.card-button:hover{
+.safety-partner-card-button:hover{
     background-color: #28400c;
     color: white;
 }

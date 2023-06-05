@@ -57,10 +57,18 @@ const tent_sites = [
 ]
 
 function Tent_Site_Map () {
-    
+    // const currentRef= useRef(null);
+    // const [isTop,setIsTop] = useState(false);
     const {isLoaded} = useLoadScript({
         googleMapsApiKey: "AIzaSyBOWNZQGTyQkKh4Iylg16hZlBdwi5NWY14",
     });
+
+    // useEffect(()=>{
+    //     const handleScroll = ()=>{
+    //         const rect = currentRef.current.getBoundingClientRect();
+    //         const scrollTop = window.pageYOffset || document.documentElmenet
+    //     }
+    // },[])
 
     if (!isLoaded) return <div>...Loading</div>;
     return <Map />;
@@ -123,9 +131,11 @@ function Map () {
     });
 
     return(
-        <GoogleMap
+        <div id="stickyMap">
+            <GoogleMap
         options={mapOptions} 
         mapContainerClassName="tent-map-container"
+        
         >
             {tent_sites.map((item) => (
                 <MarkerF
@@ -168,6 +178,8 @@ function Map () {
                 );
              })} */}
         </GoogleMap>
+        </div>
+        
     );
 }
 

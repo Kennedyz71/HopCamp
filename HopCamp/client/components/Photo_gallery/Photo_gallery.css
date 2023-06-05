@@ -81,7 +81,8 @@ button.photo-gallery-button {
     display: flex;
     align-items: flex-start; 
     justify-content: flex-start;
-    background-color:  rgba(255, 255, 255, 0.911);  
+    background-color: rgba(255,255,255,0.911); 
+
 }
 
 .modal-close-button{
@@ -92,12 +93,12 @@ button.photo-gallery-button {
 }
   
 .modal-content {
-    height: 100%;
+    width:1200px;
 }
   
 .modal-body .photo-gallery-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: auto auto;
     grid-gap: 8px;
 }
   
